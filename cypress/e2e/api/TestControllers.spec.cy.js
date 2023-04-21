@@ -33,7 +33,7 @@ describe('ControllerUser', () => {
     });
 });
 
-describe.only('ControllerPet',() => {
+describe('ControllerPet',() => {
     it('PutPet', () => {
         cy.request({
             method: 'PUT',
@@ -60,7 +60,7 @@ describe.only('ControllerPet',() => {
             expect(resp.status).to.eq(200)
         });
     });
-    it.only('DeletePet', () => {
+    it('DeletePet', () => {
         cy.request({
             method: 'DELETE',
             url: 'https://petstore.swagger.io/v2/pet/2',
