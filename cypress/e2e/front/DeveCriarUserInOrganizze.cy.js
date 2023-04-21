@@ -1,3 +1,5 @@
+/// <reference types="Cypress"/>
+
 describe('Criar usuário', () => {
   it('Cadastrando usuário', () => {
     //Arrange
